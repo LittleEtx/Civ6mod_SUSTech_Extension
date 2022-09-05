@@ -1,0 +1,55 @@
+INSERT OR REPLACE INTO Types 
+    (Type,                                      Kind) 
+VALUES 
+    ('CIVILIZATION_SUSTECH',                    'KIND_CIVILIZATION'),
+    ('TRAIT_CIVILIZATION_RESEARCH_UNIVERSITY',  'KIND_TRAIT');
+
+INSERT OR REPLACE INTO Civilizations
+    (CivilizationType, Name, 
+    Description, Adjective, 
+    StartingCivilizationLevelType, RandomCityNameDepth, Ethnicity)
+VALUES
+    ('CIVILIZATION_SUSTECH', 'LOC_CIVILIZATION_SUSTECH_NAME', 
+    'LOC_CIVILIZATION_SUSTECH_DESCRIPTION', 'LOC_CIVILIZATION_SUSTECH_ADJECTIVE',
+    'CIVILIZATION_LEVEL_FULL_CIV', 10, 'ETHNICITY_ASIAN');
+
+
+INSERT OR REPLACE INTO CivilizationInfo
+    (CivilizationType,          Header,                     Caption,                            SortIndex)
+VALUES
+    ('CIVILIZATION_SUSTECH',    'LOC_CIVINFO_LOCATION',     'LOC_CIVINFO_SUSTECH_LOCATION',     10),
+    ('CIVILIZATION_SUSTECH',    'LOC_CIVINFO_SIZE',         'LOC_CIVINFO_SUSTECH_SIZE',         20),
+    ('CIVILIZATION_SUSTECH',    'LOC_CIVINFO_POPULATION',   'LOC_CIVINFO_SUSTECH_POPULATION',   30),
+    ('CIVILIZATION_SUSTECH',    'LOC_CIVINFO_CAPITAL',      'LOC_CIVINFO_SUSTECH_CAPITAL',      40);
+
+
+INSERT OR REPLACE INTO CivilizationLeaders
+    (CivilizationType,          LeaderType,             CapitalName)
+VALUES
+    ('CIVILIZATION_SUSTECH',    'LEADER_NANXIAOKE',     'LOC_CITY_NAME_SUSTECH_CENTER');
+
+
+INSERT OR REPLACE INTO CivilizationTraits
+    (CivilizationType,          TraitType)
+VALUES
+    ('CIVILIZATION_SUSTECH',    'TRAIT_CIVILIZATION_RESEARCH_UNIVERSITY');
+
+
+INSERT OR REPLACE INTO CityNames
+    (CivilizationType,          CityName)   
+VALUES
+    ('CIVILIZATION_SUSTECH',    'LOC_CITY_NAME_SUSTECH_CENTER'),
+    ('CIVILIZATION_SUSTECH',    'LOC_CITY_NAME_LIYUAN'),
+    ('CIVILIZATION_SUSTECH',    'LOC_CITY_NAME_CHUANYUAN'),
+    ('CIVILIZATION_SUSTECH',    'LOC_CITY_NAME_XINYUAN');
+
+
+-- INSERT OR REPLACE INTO CivilizationCitizenNames
+-- INSERT OR REPLACE INTO StartBiasTerrains
+
+INSERT OR REPLACE INTO Traits
+    (TraitType,                                 Name,                                               Description)
+VALUES
+    ('TRAIT_CIVILIZATION_RESEARCH_UNIVERSITY',  'LOC_TRAIT_CIVILIZATION_RESEARCH_UNIVERSITY_NAME', 'LOC_TRAIT_CIVILIZATION_RESEARCH_UNIVERSITY_DESCRIPTION');
+
+

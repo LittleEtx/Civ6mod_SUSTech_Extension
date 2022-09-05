@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<EnglishText>
+		<Row Tag="LOC_SUSTech_EXTENSION_MOD_TITLE">
+			<Text>SUSTech Extension</Text>
+		</Row>
+		<Row Tag="LOC_SUSTech_EXTENSION_MOD_TEASER">
+			<Text>SUSTech Civilization and its Leaders</Text>
+		</Row>
+		<Row Tag="LOC_SUSTech_EXTENSION_MOD_DESCRIPTION">
+			<Text>Cantains SUSTech civilization and its leaders.</Text>
+		</Row>
+	</EnglishText>
+
+    <LocalizedText>
+        <Replace Tag="LOC_SUSTech_EXTENSION_MOD_TITLE" Language="zh_Hans_CN">
+            <Text>南科大拓展包</Text>
+        </Replace>
+        <Replace Tag="LOC_SUSTech_EXTENSION_MOD_TEASER" Language="zh_Hans_CN">
+            <Text>南科大文明和其中的领袖</Text>
+        </Replace>
+        <Replace Tag="LOC_SUSTech_EXTENSION_MOD_DESCRIPTION" Language="zh_Hans_CN">
+            <Text>体验南科大文明的别样乐趣。</Text>
+        </Replace>
+    </LocalizedText>
+</GameData>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="342f6a9e-73de-4ec2-aac2-9690ebdc4779" version="1">
+
+  <Properties>
+    <Name>LOC_SUSTech_EXTENSION_MOD_TITLE</Name>
+    <Description>LOC_SUSTech_EXTENSION_MOD_DESCRIPTION</Description>
+    <Teaser>LOC_SUSTech_EXTENSION_MOD_TEASER</Teaser>
+    <Authors>LittleEtx</Authors>
+    <Homepage></Homepage>
+    <SpecialThanks></SpecialThanks>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <CompatibleVersions>1.2,2.0</CompatibleVersions>
+  </Properties>
+
+  <FrontEndActions>
+    <UpdateColors id="SUSTechColors">
+			<File>Data/SUSTech_Colors.sql</File>
+		</UpdateColors>
+    <UpdateDatabase id="SUSTechSettings">
+      <File>Data/SUSTech_ConfigData.sql</File>
+    </UpdateDatabase>
+    <UpdateText id="SUSTechSettingsText">
+			<File>Text/SUSTech_PackageText.xml</File>
+			<File>Text/SUSTech_ConfigText.sql</File>
+		</UpdateText>
+  </FrontEndActions>
+
+  <InGameActions>
+    <UpdateColors id="SUSTechColors">
+			<File>Data/SUSTech_Colors.sql</File>
+		</UpdateColors>
+    <UpdateDatabase id="SUSTechGameplay">
+			<File>Data/SUSTech_Civilizations.sql</File>
+			<File>Data/SUSTech_Leaders.sql</File>
+      <File>Data/SUSTech_LoadingInfo.sql</File>
+		</UpdateDatabase>
+    <UpdateText id="SUSTechText">
+			<File>Text/SUSTech_CityNames_Text.sql</File>
+			<File>Text/SUSTech_Civilopedia_Text.sql</File>
+			<File>Text/SUSTech_Leaders_Text.sql</File>
+      <File>Text/SUSTech_PackageText.xml</File>
+      <File>Text/SUSTech_ConfigText.sql</File>
+		</UpdateText>
+  </InGameActions>
+
+  <LocalizedText>
+		<File>Text/SUSTech_PackageText.xml</File>
+	</LocalizedText>
+
+  <Files>
+    <File>Data/SUSTech_BackgroundInfo.sql</File>
+    <File>Data/SUSTech_Civilizations.sql</File>
+    <File>Data/SUSTech_Leaders.sql</File>
+    <File>Data/SUSTech_ConfigData.sql</File>
+    <File>Data/SUSTech_Colors.sql</File>
+    <File>Data/SUSTech_LoadingInfo.sql</File>
+    <!-- text files-->
+    <File>Text/SUSTech_CityNames_Text.sql</File>
+		<File>Text/SUSTech_Civilopedia_Text.sql</File>
+		<File>Text/SUSTech_Leaders_Text.sql</File>
+    <File>Text/SUSTech_PackageText.xml</File>
+    <File>Text/SUSTech_ConfigText.sql</File>
+  </Files>
+</Mod>
